@@ -1,4 +1,12 @@
-# XRP TRAVEL (Tickrize) - Real-Time Ticketing and Payment System 🌑
+<h1 align="center">XRP TRAVEL (Tickrize)</h1>
+
+<p align="center">
+ <img src="https://i.ibb.co/SNWbLjV/tickrize-high-resolution-logo-transparent-4.png" alt="logo2" width="400" style="margin-top:200px;">
+
+</p>
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 ## Introduction
 
