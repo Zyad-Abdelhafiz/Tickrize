@@ -1,82 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tickrize</title>
-        <link rel="stylesheet" href="style.css"/>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-    <body>
-        <section class="section__container steps__container">
-            <p class="subheader">TRAVEL SUPPORT</p>
-            <h2 class="section__header">Plan your travel with confidence</h2>
-            <p class="description">
-              Find help with your bookings and travel plans, and see what to expect
-              along your journey.
+    <link rel="stylesheet" href="style2.css" />
+    <!-- <link rel="stylesheet" href="styleback.css" /> -->
+    <link rel="stylesheet" href="cards.css" />
+    <link rel="stylesheet" href="slider.css" />
+    <link rel="stylesheet" href="marquee.css" />
+    <link rel="stylesheet" href="firstline.css" />
+    <link rel="stylesheet" href="cardsme.css" />
+    <link rel="stylesheet" href="booking.css" />
+    <link rel="stylesheet" href="first.css" />
+    <link rel="stylesheet" href="walid.css" />
+    <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
+    <script src="marquee.js"></script>
+
+    <title>Tickrize</title>
+
+
+
+
+  </head>
+
+  <body>
+
+    <!-- Header -->
+    <header>
+      <img class="logo" src="image/tickrize-high-resolution-logo-transparent-3.png" alt="logo">
+      <nav id="header">
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#sponsors">Sponsors</a></li>
+          <li><a href="#booking">Booking</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="#"><button>Contact</button></a>
+    </header>
+    <!-- Header -->
+    <div class="container">
+      <h1 class="animated">Book now with Tickrize</h1>
+    </div>
+    <!-- background -->
+    <!-- <svg preserveAspectRatio="xMidYMid slice" viewBox="10 10 80 80">
+  
+  <defs>
+      <style>
+          @keyframes rotate {
+         0% {
+                  transform: rotate(0deg);
+              }
+              100% {
+                  transform: rotate(360deg);
+              }
+          }
+          .out-top {
+              animation: rotate 20s linear infinite;
+              transform-origin: 13px 25px;
+          }
+          .in-top {
+              animation: rotate 10s linear infinite;
+              transform-origin: 13px 25px;
+          }
+          .out-bottom {
+              animation: rotate 25s linear infinite;
+              transform-origin: 84px 93px;
+          }
+          .in-bottom {
+              animation: rotate 15s linear infinite;
+              transform-origin: 84px 93px;
+          }
+      </style>
+  </defs>
+  
+  <path fill="#FFF2D8" class="out-top" d="M37-5C25.1-14.7,5.7-19.1-9.2-10-28.5,1.8-32.7,31.1-19.8,49c15.5,21.5,52.6,22,67.2,2.3C59.4,35,53.7,8.5,37-5Z"/>
+  <path fill="#EAD7BB" class="in-top" d="M20.6,4.1C11.6,1.5-1.9,2.5-8,11.2-16.3,23.1-8.2,45.6,7.4,50S42.1,38.9,41,24.5C40.2,14.1,29.4,6.6,20.6,4.1Z"/>
+  <path fill="#BCA37F" class="out-bottom" d="M105.9,48.6c-12.4-8.2-29.3-4.8-39.4.8-23.4,12.8-37.7,51.9-19.1,74.1s63.9,15.3,76-5.6c7.6-13.3,1.8-31.1-2.3-43.8C117.6,63.3,114.7,54.3,105.9,48.6Z"/>
+  <path fill="#113946" class="in-bottom" d="M102,67.1c-9.6-6.1-22-3.1-29.5,2-15.4,10.7-19.6,37.5-7.6,47.8s35.9,3.9,44.5-12.5C115.5,92.6,113.9,74.6,102,67.1Z"/>
+  
+<link href="https://api.fontshare.com/v2/css?f[]=montserrat@500,700,601,600,501&display=swap" rel="stylesheet">
+</svg> -->
+
+    <section>
+      <div id="sponsors" class="slider">
+        <h2
+          style="text-align: center; margin-bottom: 60px; color:#113946; font-weight: 600; text-transform: uppercase;">
+          Sponsered By</h2>
+        <div class="slide-track">
+          <div class="slide">
+            <img src="1200px-Amazon_Web_Services_Logo.svg.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="PNGPIX-COM-Microsoft-Logo-PNG-Transparent.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="Untitled design-32.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="ibm.png" alt="">
+          </div>
+    </section>
+    <section>
+      <div class="marquee" data-marquee-duration="30">
+        <div class="marquee__inner">
+          <div class="marquee__content">Embark on a seamless journey with Tickrize, where cutting-edge technology meets
+            the world of aviation. Explore the future of ticketing with our real-time platform, ensuring swift and
+            secure transactions using cryptocurrency.</div>
+        </div>
+      </div>
+
+      <div class="marquee" data-marquee-duration="20">
+        <div class="marquee__inner">
+          <div class="marquee__content">Embark on a seamless journey with Tickrize, where cutting-edge technology meets
+            the world of aviation. Explore the future of ticketing with our real-time platform, ensuring swift and
+            secure transactions using cryptocurrency.</div>
+        </div>
+      </div>
+    </section>
+
+    </div>
+    </div>
+
+    <div id="booking" class="booking-form-w3layouts">
+      <!-- Form starts here -->
+      <form action="#" method="post">
+        <h2 class="sub-heading-agileits">Booking Details</h2>
+        <div class="main-flex-w3ls-sectns">
+          <div class="field-agileinfo-spc form-w3-agile-text1">
+            <select class="form-control">
+              <option>From</option>
+              <option value="Lorem Ipsum">Lorem Ipsum</option>
+              <option value="Adipiscing">Adipiscing</option>
+              <option value="Lorem Ipsum">Lorem Ipsum</option>
+              <option value="Adipiscing">Adipiscing</option>
+              <option value="Lorem Ipsum">Lorem Ipsum</option>
+              <option value="Adipiscing">Adipiscing</option>
+            </select>
+          </div>
+          <div class="field-agileinfo-spc form-w3-agile-text2">
+            <select class="form-control">
+              <option>To</option>
+              <option value="Lorem Ipsum">Lorem Ipsum</option>
+              <option value="Adipiscing">Adipiscing</option>
+              <option value="Lorem Ipsum">Lorem Ipsum</option>
+              <option value="Adipiscing">Adipiscing</option>
+              <option value="Lorem Ipsum">Lorem Ipsum</option>
+              <option value="Adipiscing">Adipiscing</option>
+            </select>
+          </div>
+        </div>
+        <div class="main-flex-w3ls-sectns">
+          <div class="field-agileinfo-spc form-w3-agile-text1">
+            <select class="form-control">
+              <option>Preferred Airline</option>
+              <option value="American Airline">American Airline</option>
+              <option value="Delta Airlines">Delta Airlines</option>
+              <option value="Frontier Airline">Frontier Airline</option>
+              <option value="Jet Blue">Jet Blue</option>
+              <option value="Southwest Airlines">Southwest Airlines</option>
+            </select>
+          </div>
+          <div class="field-agileinfo-spc form-w3-agile-text2">
+            <select class="form-control">
+              <option>Preferred Seating</option>
+              <option value="Window">Window</option>
+              <option value="Aisle">Aisle</option>
+              <option value="Special">Special (Request note below)</option>
+            </select>
+          </div>
+        </div>
+        <div class="main-flex-w3ls-sectns">
+          <div class="field-agileinfo-spc form-w3-agile-text1">
+            <input id="datepicker" name="Text" type="text" placeholder="Departure Date" value=""
+              onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required=""
+              class="hasDatepicker">
+          </div>
+          <div class="field-agileinfo-spc form-w3-agile-text2">
+            <input type="text" id="timepicker" name="Time" class="timepicker form-control hasWickedpicker"
+              placeholder="Departure Time" value="" onkeypress="return false;">
+          </div>
+        </div>
+
+        <div class="triple-wthree">
+          <div class="field-agileinfo-spc form-w3-agile-text11">
+            <select class="form-control">
+              <option value="">Adult(12+ Yrs)</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5+</option>
+            </select>
+          </div>
+          <div class="field-agileinfo-spc form-w3-agile-text22">
+            <select class="form-control">
+              <option value="">Children(2-11 Yrs)</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5+</option>
+            </select>
+          </div>
+          <div class="field-agileinfo-spc form-w3-agile-text33">
+            <select class="form-control">
+              <option value="">Infant(under 2Yrs)</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5+</option>
+            </select>
+          </div>
+        </div>
+        <div class="radio-section">
+          <h6>Select your Fare</h6>
+          <ul class="radio-buttons-w3-agileits">
+            <li>
+              <input type="radio" id="a-option" name="selector1">
+              <label for="a-option">One Way</label>
+              <div class="check"></div>
+            </li>
+            <li>
+              <input type="radio" id="b-option" name="selector1">
+              <label for="b-option">Round-Trip</label>
+              <div class="check">
+                <div class="inside"></div>
+              </div>
+            </li>
+          </ul>
+          <div class="clear"></div>
+        </div>
+        <div class="main-flex-w3ls-sectns">
+          <div class="field-agileinfo-spc form-w3-agile-text1">
+            <input id="datepicker1" name="Text" type="text" placeholder="Return Date" value=""
+              onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required=""
+              class="hasDatepicker">
+          </div>
+          <div class="field-agileinfo-spc form-w3-agile-text2">
+            <input type="text" id="timepicker1" name="Time" class="timepicker form-control hasWickedpicker"
+              placeholder="Return Time" value="" onkeypress="return false;">
+          </div>
+        </div>
+        <div class="field-agileinfo-spc form-w3-agile-text">
+          <textarea name="Message" placeholder="Any Message..."></textarea>
+        </div>
+        <h3 class="sub-heading-agileits">Personal Details</h3>
+        <div class="main-flex-w3ls-sectns">
+          <div class="field-agileinfo-spc form-w3-agile-text1">
+            <input type="text" name="Name" placeholder="Full Name" required="">
+          </div>
+          <div class="field-agileinfo-spc form-w3-agile-text2">
+            <input type="text" name="Phone no" placeholder="Phone Number" required="">
+          </div>
+        </div>
+        <div class="field-agileinfo-spc form-w3-agile-text">
+          <input type="email" name="Email" placeholder="Email" required="">
+        </div>
+        <div class="clear"></div>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear Form">
+        <div class="clear"></div>
+      </form>
+      <!--// Form starts here -->
+    </div>
+
+
+    
+    <!--wailds part starts from here-->
+
+    <section class="section__container steps__container">
+      <h1 style="font-weight: 600;"  class="subheader">TRAVEL SUPPORT</h1>
+      <h2 class="section__header">Plan your travel with confidence</h2>
+      <p class="description">
+        Find help with your bookings and travel plans, and see what to expect
+        along your journey.
+      </p>
+      </div>
+      <div id="walid">
+        <ul>
+          <li style="--accent-color:#41516C">
+            <div class="date">01</div>
+            <div class="titre">Choose Your Destination & Plan</div>
+            <div class="descr">Select your destination and customize your travel plan effortlessly on our user-friendly
+              platform.</div>
+          </li>
+          <li style="--accent-color:#FBCA3E">
+            <div class="date">02</div>
+            <div class="titre">Fill your personal Information and complete your Payement</div>
+            <div class="descr">Provide your details and securely finalize your payment for a hassle-free transaction.
+            </div>
+          </li>
+          <li style="--accent-color:#E24A68">
+            <div class="date">03</div>
+            <div class="titre">Receive Email with Flight Details and Unique NFT</div>
+            <div class="descr">Sit back, relax, and await an email containing all your flight information along with a
+              special digital collectible – your unique NFT, making your journey truly memorable.</div>
+          </li>
+
+      </Div>
+    </section>
+    <!-- cards -->
+    <section class="cards" id="Skills">
+      <h1 style="font-weight: 600; text-transform: uppercase;" class="title">What makes us different</h1>
+      <div class="content">
+        <!-- first card -->
+        <div class="card">
+          <div class="icon">
+            <iconify-icon icon="mdi:clock-fast"></iconify-icon>
+          </div>
+          <div class="info">
+            <h3>Faster</h3>
+            <p>Get ready for a faster travel experience with us! From rapid check-ins to prompt boarding, we've
+              streamlined every step for your convenience.</p>
+          </div>
+        </div>
+
+
+        <!-- second card -->
+        <div class="card">
+          <div class="icon">
+            <iconify-icon icon="material-symbols:airplane-ticket"></iconify-icon>
+          </div>
+          <div class="info">
+            <h3>More Safe</h3>
+            <p>We prioritize your well-being with rigorous safety measures throughout your journey. Our commitment
+              extends to secure payment methods, ensuring your financial transactions are encrypted for peace of mind.
             </p>
           </div>
-    <div>
-          <ul>
-              <li style="--accent-color:#41516C">
-                  <div class="date">01</div>
-                  <div class="titre">Choose Your Destination & Plan</div>
-                  <div class="descr">Select your destination and customize your travel plan effortlessly on our user-friendly platform.</div>
-              </li>
-              <li style="--accent-color:#FBCA3E">
-                  <div class="date">02</div>
-                  <div class="titre">Fill your personal Information and complete your Payement</div>
-                  <div class="descr">Provide your details and securely finalize your payment for a hassle-free transaction.</div>
-              </li>
-              <li style="--accent-color:#E24A68">
-                  <div class="date">03</div>
-                  <div class="titre">Receive Email with Flight Details and Unique NFT</div>
-                  <div class="descr">Sit back, relax, and await an email containing all your flight information along with a special digital collectible – your unique NFT, making your journey truly memorable.</div>
-              </li>
-    
-    </Div>
-        </section>
-       <!-- cards -->
-<section class="cards" id="Skills">
-    <h2 class="title">What makes us different</h2>
-    <div class="content">
-         <!-- first card -->
-                <div class="card">
-                    <div class="icon">
-                    <iconify-icon icon="mdi:clock-fast"></iconify-icon>
-                    </div>
-                    <div class="info">
-                        <h3>Faster</h3>
-                        <p>Get ready for a faster travel experience with us! From rapid check-ins to prompt boarding, we've streamlined every step for your convenience.</p>
-                    </div>
-                </div>
-  
-  
-         <!-- second card -->
-                <div class="card">
-                  <div class="icon">
-                    <iconify-icon icon="material-symbols:airplane-ticket"></iconify-icon>
-                  </div>
-                  <div class="info">
-                      <h3>More Safe</h3>
-                      <p>We prioritize your well-being with rigorous safety measures throughout your journey. Our commitment extends to secure payment methods, ensuring your financial transactions are encrypted for peace of mind.</p>
-                  </div>
-              </div>
-      
-      
-          <!-- third card -->
-              <div class="card">
-                  <div class="icon">
-                    <iconify-icon icon="fa6-solid:gifts"></iconify-icon>
-                  </div>
-                  <div class="info">
-                      <h3>More Rewards and prizes</h3>
-                      <p>Earn valuable points with every reservation, leading to exclusive benefits such as flight upgrades and travel packages. As a special touch, each booking comes with a unique NFT, turning your travel memories into digital collectibles.</p>
-                  </div>
-              </div>
+        </div>
+
+
+        <!-- third card -->
+        <div class="card">
+          <div class="icon">
+            <iconify-icon icon="fa6-solid:gifts"></iconify-icon>
+          </div>
+          <div class="info">
+            <h3>More Rewards and prizes</h3>
+            <p>Earn valuable points with every reservation, leading to exclusive benefits such as flight upgrades and
+              travel packages. As a special touch, each booking comes with a unique NFT, turning your travel memories
+              into digital collectibles.</p>
+          </div>
+        </div>
       </div>
-        </section>
-    </body>
+      <section>
+        <div class="marquee" data-marquee-duration="30">
+          <div class="marquee__inner">
+            <div class="marquee__content">Embark on a seamless journey with Tickrize, where cutting-edge technology meets
+              the world of aviation. Explore the future of ticketing with our real-time platform, ensuring swift and
+              secure transactions using cryptocurrency.</div>
+          </div>
+        </div>
+  
+        <div class="marquee" data-marquee-duration="20">
+          <div class="marquee__inner">
+            <div class="marquee__content">Embark on a seamless journey with Tickrize, where cutting-edge technology meets
+              the world of aviation. Explore the future of ticketing with our real-time platform, ensuring swift and
+              secure transactions using cryptocurrency.</div>
+          </div>
+        </div>
+      </section>
+
+
+    <!--wailds part starts from here-->
+
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-muted">© 2024 Company, Inc</p>
+
+      <a href="/"
+        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <img class="logo" src="image/tickrize-high-resolution-logo-transparent-3.png" alt="logo">
+      </a>
+
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="#sponsors" class="nav-link px-2 text-muted">Sponsors</a></li>
+        <li class="nav-item"><a href="#booking" class="nav-link px-2 text-muted">Booking</a></li>
+      </ul>
+    </footer>
+
+
+
+  </body>
 
 </html>
