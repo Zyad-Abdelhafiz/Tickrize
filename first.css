@@ -1,0 +1,28 @@
+
+ 
+ .container{
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .animated{
+    font-size: 8rem;
+    background: url('image/tickrize-high-resolution-logo-transparent-3.png') no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: moveBg 10s linear infinite;
+    -webkit-animation: moveBg 10s linear infinite;
+  }
+  
+  @keyframes moveBg{
+    0% {
+      background-position: 0% 30%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }

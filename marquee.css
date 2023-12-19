@@ -1,0 +1,35 @@
+
+ section .marquee {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    min-height: 5ch;
+    overflow: hidden;
+  } 
+  
+  .marquee {
+    padding: 1vw;
+    white-space: nowrap;
+  }
+    
+  .marquee:first-child {
+    background-color: #113946;
+    transform: rotateZ(-3deg);
+  }
+  
+  .marquee:last-child {
+    background-color: #BCA37F;
+    transform: rotateZ(-1deg);
+  }
+  
+  .marquee__inner {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .marquee__content {
+    color: #FFF2D8;
+    font-size: clamp(40px, 4.375vw, 70px);
+  }
+  
