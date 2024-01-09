@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <title>Countries</title>
+</head>
+<!-- Walid's part -->
+<body>
+    <h1>Wander the World: Our Preferred Countries</h1>
+    <h3>A Journey Through Cultures and Landscapes</h3>  
+    <div class="catalogue">
+        <div class="pays">
+            <img src="image/TAL-Eiffel-Tower-BESTFRANCE0323-dada0673f8764c099b68d01695ef8057.jpg" alt="France">
+            <p><strong>FRANCE</strong></p>
+            <p>France, known for its fashion, refined cuisine, and diverse culture, is renowned for its captivating landscapes from the Alps to the French Riviera. Explore history, gastronomy, and art in this captivating European country.</p>
+        </div>
+        <div class="pays">
+            <img src="image/0 where to stay in Italy.jpg" alt="Italy">
+            <p><strong>ITALY</strong></p>
+            <p>Italy, famous for its art, music, and delicious cuisine, offers an unforgettable cultural experience. From romantic cities like Rome, Florence, and Venice to the stunning coastlines of the Mediterranean, Italy is a cultural gem with a rich historical heritage.</p>
+        </div>
+        <div class="pays">
+            <img src="image/18061072.jpg.webp" alt="Egypt">
+            <p><strong>EGYPT</strong></p>
+            <p>Egypt, the cradle of ancient pharaonic civilization, attracts travelers with its iconic pyramids, majestic temples along the Nile, and the enchantment of the Sahara Desert. Explore the rich history of this fascinating country.</p>
+        </div>
+        <div class="pays">
+            <img src="image/shutterstock_11771813523.jpg" alt="Algeria">
+            <p><strong>ALGERIA</strong></p>
+            <p>Algeria, located in North Africa, is a country of contrasts, featuring striking deserts, imposing mountain ranges, and picturesque Mediterranean coastlines. Its rich history and diverse culture make it a unique destination to explore.</p>
+        </div>
+        <div class="pays">
+            <img src="image/istanbul-turkey0616-68fdff743e434ae68541a94c54a6ddb5.jpg" alt="Turkey">
+            <p><strong>TURKEY</strong></p>
+            <p>Turkey, where East meets West, is a country of diverse landscapes. From Ottoman palaces in Istanbul to the spectacular landscapes of Cappadocia and the Mediterranean beaches, Turkey offers a unique cultural and natural experience.</p>
+        </div>
+        <div class="pays">
+            <img src="image/germany-living.2e16d0ba.fill-40000x30000.jpg" alt="Germany">
+            <p><strong>GERMANY</strong></p>
+            <p>Germany, at the heart of Europe, is renowned for its advanced engineering, picturesque forests, and charming villages. Explore dynamic cities like Berlin and Munich, delve into the country's fascinating history, and savor delicious culinary specialties.</p>
+        </div>
+        <div class="pays">
+            <img src="image/71169903.cms.webp" alt="Portugal">
+            <p><strong>PORTUGAL</strong></p>
+            <p>Portugal, with its picturesque cities like Lisbon and Porto, golden Algarve beaches, and rich maritime heritage, offers an authentic experience. Taste Porto wine, explore medieval castles, and immerse yourself in the warm Portuguese culture.</p>
+        </div>
+        <div class="pays">
+            <img src="image/london-e1634207674493-1170x630.jpg.optimal.jpg" alt="United Kingdom">
+            <p><strong>UNITED KINGDOM</strong></p>
+            <p>The United Kingdom, with England, Scotland, Wales, and Northern Ireland, is a blend of rich history, royal traditions, and diverse landscapes. From iconic landmarks in London to historic Scottish castles, picturesque Welsh landscapes, and charming Northern Irish cities, the UK offers a unique blend of modernity and tradition. Explore vibrant arts scenes, diverse countryside, and distinctive regional charm.</p>
+        </div>
+        <div class="pays">
+            <img src="image/Hasan-II-mosque-medina-city-Casablanca-Morocco.jpg.webp" alt="Morroco">
+            <p><strong>MOROCCO</strong></p>
+            <p>Morocco, with its bustling souks, magnificent palaces, and breathtaking desert landscapes, immerses visitors in Arab and Berber culture. Discover the magic of medinas, the Atlas Mountains, and the enchanting beaches along the Atlantic coast.</p>
+        </div>
+        <div class="pays">
+            <img src="image/tunis.jpg" alt="Tunisia">
+            <p><strong>TUNISIA</strong></p>
+            <p>Tunisia, on the shores of the Mediterranean, captivates with its blend of Arab and African traditions. Explore vibrant markets, visit historical sites like Carthage, and relax on the sandy beaches of the Gulf of Hammamet.</p>
+        </div>
+    </div>
+
+
+    <script>
+        
+        let paysCards = document.querySelectorAll('.pays');
+        paysCards.forEach(card => {
+          card.addEventListener('click', () => {
+            if (card.classList.contains('active')) {
+              // Si la carte est déjà active, supprimer la classe 'active' et 'inactive' de toutes les cartes
+              paysCards.forEach(card => {
+                card.classList.remove('active');
+                card.classList.remove('inactive');
+              });
+            } else {
+              // Sinon, supprimer la classe 'active' de toutes les cartes
+              paysCards.forEach(card => {
+                card.classList.remove('active');
+              });
+        
+              // Et ajouter la classe 'active' à la carte cliquée
+              card.classList.add('active');
+        
+              // Ajouter la classe 'inactive' aux autres cartes
+              paysCards.forEach(otherCard => {
+                if (otherCard !== card) {
+                  otherCard.classList.add('inactive');
+                }
+              });
+            }
+          });
+        });
+        </script>
+
+</body>
+</html>
