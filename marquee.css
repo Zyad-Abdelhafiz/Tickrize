@@ -14,12 +14,12 @@
   }
     
   .marquee:first-child {
-    background-color: #113946;
+    background-color: #4fb6d9;
     transform: rotateZ(-3deg);
   }
   
   .marquee:last-child {
-    background-color: #BCA37F;
+    background-color: #2E3853;
     transform: rotateZ(-1deg);
   }
   
@@ -29,7 +29,7 @@
   }
   
   .marquee__content {
-    color: #FFF2D8;
+    color: #ffffff;
     font-size: clamp(40px, 4.375vw, 70px);
   }
   
