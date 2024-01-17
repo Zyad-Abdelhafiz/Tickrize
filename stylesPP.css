@@ -3,17 +3,7 @@ body {
     margin: 0;
     padding: 0;
     }
-    
-    header {
-    background-color: #4fb6d9;
-    color: #fff;
-    padding: 1rem;
-    }
-    
-    header h1 {
-        margin: 0;
-        text-align: center;
-    }
+  
     
       .nav-button {
         margin: 0 10px; /* Ajoute une marge autour des boutons */
@@ -26,13 +16,6 @@ body {
         color: rgb(0, 0, 0); /* Change la couleur du texte lorsque la souris est sur le bouton */
       }
 
-      nav {
-        background-color: #2E3853;
-        color: #fff;
-        display: flex;
-        justify-content: flex-end;
-        padding: 1rem;
-      }
     
     nav ul {
     list-style-type: none;
@@ -62,9 +45,3 @@ body {
     margin: 0 0 1rem;
     }
     
-    footer {
-    background-color: #000000;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-    }

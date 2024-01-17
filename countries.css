@@ -22,11 +22,11 @@ body::before {
   }
 
 h1 {
-    color: #333;
+    color: #2c3855;
 }
 
 h3 {
-    color: #555;
+    color: #2c3855;
 }
 
 .catalogue {
@@ -62,7 +62,7 @@ h3 {
     padding: 15px;
     text-align: center;
     font-size: 16px;
-    color: #333;
+    color: #2c3855;
 }
 
 @media (max-width: 768px) {
