@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+    
+    header {
+    background-color: #4fb6d9;
+    color: #fff;
+    padding: 1rem;
+    }
+    
+    header h1 {
+        margin: 0;
+        text-align: center;
+    }
+    
+      .nav-button {
+        margin: 0 10px; /* Ajoute une marge autour des boutons */
+        padding: 10px; /* Ajoute un padding à l'intérieur des boutons */
+        text-decoration: none; /* Supprime le soulignement */
+        color: rgb(255, 255, 255); /* Définit la couleur du texte */
+      }
+      
+      .nav-button:hover {
+        color: rgb(0, 0, 0); /* Change la couleur du texte lorsque la souris est sur le bouton */
+      }
+
+      nav {
+        background-color: #2E3853;
+        color: #fff;
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem;
+      }
+    
+    nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+    
+    nav li {
+    margin: 0 1rem;
+    }
+    
+    nav a {
+    color: #fff;
+    text-decoration: none;
+    }
+    
+    main {
+        padding: 20px;
+        background-color: #fff;
+        margin: 20px auto;
+        width: 80%;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.301);
+        border-radius: 20px;
+      }
+    
+    main h2 {
+    margin: 0 0 1rem;
+    }
+    
+    footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    }
